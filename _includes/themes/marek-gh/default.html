@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>
-      {{ page.title }}
+      {{ page.tagline }}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/stylesheets/normalize.css" media="screen">
@@ -13,8 +13,8 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">{{ page.title }}</h1>
-      <h2 class="project-tagline">{{ site.tagline }}</h2>
+      <h1 class="project-name">{{ page.tagline }}</h1>
+      <h2 class="project-tagline">{{ site.title }}</h2>
       <a href="https://github.com/gcc-robotics/robot-motion-planning-labs" class="btn">View on GitHub</a>
       <a href="https://github.com/gcc-robotics/robot-motion-planning-labs/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/gcc-robotics/robot-motion-planning-labs/tarball/master" class="btn">Download .tar.gz</a>
@@ -24,7 +24,7 @@
       {{ content }}
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/gcc-robotics/robot-motion-planning-labs">{{ page.title }}</a> is maintained by <a href="https://github.com/gcc-robotics">gcc-robotics</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/gcc-robotics/robot-motion-planning-labs">{{ page.tagline }}</a> is maintained by <a href="https://github.com/gcc-robotics">gcc-robotics</a>.</span>
       </footer>
 
     </section>
