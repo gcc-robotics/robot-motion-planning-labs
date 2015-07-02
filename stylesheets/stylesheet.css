@@ -33,6 +33,18 @@ a {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
+  
+section.main-content .btn {
+  color: rgba(127, 127, 127, 0.7);
+  background-color: rgba(127, 127, 127, 0.08);
+  border-color: rgba(127, 127, 127, 0.2);
+}
+
+section.main-content .btn:hover {
+  color: rgba(127, 127, 127, 0.8);
+  background-color: rgba(127, 127, 127, 0.2);
+  border-color: rgba(127, 127, 127, 0.3)
+}
 
 @media screen and (min-width: 64em) {
   .btn {
@@ -59,11 +71,7 @@ a {
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957); }
 
-@media screen and (min-width: 64em) {
-  .page-header {
-    padding: 5rem 6rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
+@media screen and (min-width: 42em) {
   .page-header {
     padding: 3rem 4rem; } }
 
