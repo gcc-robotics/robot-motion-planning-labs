@@ -34,6 +34,11 @@ Command Line
 --------------
 ROS uses the command-line in order to accomplish many of its tasks. Let's begin by connecting to our robot:
 * Log in to the computer. Include relevant information (password, etc) here
+  * [Raspberry Pi][raspberry-pi-archlinux]
+  * [Beaglebone Black][beaglebone-black-archlinux]
+    * When you extract the bootloader tarball onto the FAT16 partition of the micro SD card you will get permission errors. This is fine, keep going.
+    * Make sure you install Archlinux Arm onto the eMMC! If you only install it onto the micro SD card, the next time your Beaglebone Black looses power and powers back up it will boot back into its original operating system.
+* Log in to the computer. Include relevant information (password, etc) here
 * Open a Terminal window via the Applications ... Accessories ... Terminal menu options (or the crtl + alt + t shortcut)
 * Try opening a new Terminal tab using Control-Shift-T. (Remember this shortcut - you'll be running lots of processes later, one in each tab.)
 * Be sure your robot is on and has an "Element Direct" bluetooth receiver attached at its 25-pin serial connector in the center. Make a note of the four hexadecimal digits on the bluetooth receiver -- since there will be several on in the room, you'll need to be sure to pair with the appropriate one.
