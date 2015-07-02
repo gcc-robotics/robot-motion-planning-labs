@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: lab
 title: "Lab 1: Why Marek is awesome!""
 description: This is an awesome lab!
 zipUrl: https://github.com/gcc-robotics/robot-motion-planning-labs/archive/gh-pages.zip
