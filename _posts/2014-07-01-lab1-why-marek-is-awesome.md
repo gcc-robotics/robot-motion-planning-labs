@@ -1,8 +1,6 @@
 ---
-layout: post
+layout: page
 title: Lab 1: Why Marek is awesome!
-author: Marek Litomisky
-tags: [backup, beaglebone black, rsnapshot, rsync]
 ---
 
 This guide describes the process to configure a Raspberry Pi Model B or Beaglebone Black to as a backup server to backup Windows or Linux machines using rsnapshot and then to sync those backups across multiple backup servers using rsync.
