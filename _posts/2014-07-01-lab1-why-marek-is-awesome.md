@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: lab
 title: Lab 1: Why Marek is awesome!
 description: This is an awesome lab!
+zipUrl: https://github.com/gcc-robotics/robot-motion-planning-labs/archive/gh-pages.zip
 ---
 
 This guide describes the process to configure a Raspberry Pi Model B or Beaglebone Black to as a backup server to backup Windows or Linux machines using rsnapshot and then to sync those backups across multiple backup servers using rsync.
