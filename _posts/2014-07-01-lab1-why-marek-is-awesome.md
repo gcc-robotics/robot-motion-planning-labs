@@ -33,15 +33,15 @@ The computers in this lab are equipped with both Windows and Ubuntu operating sy
 Command Line
 --------------
 ROS uses the command-line in order to accomplish many of its tasks. Let's begin by connecting to our robot:
-  * Log in to the computer. Include relevant information (password, etc) here
-  * Open a Terminal window via the Applications ... Accessories ... Terminal menu options (or the crtl + alt + t shortcut)
-    * Try opening a new Terminal tab using Control-Shift-T. (Remember this shortcut - you'll be running lots of processes later, one in each tab.)
-  * Be sure your robot is on and has an "Element Direct" bluetooth receiver attached at its 25-pin serial connector in the center. Make a note of the four hexadecimal digits on the bluetooth receiver -- since there will be several on in the room, you'll need to be sure to pair with the appropriate one.
-  * Open a new tab by right-clicking or the control-shift-t shortcut
-    * Each new tab or Terminal window will hold a separate process -- be ready to open lots of new tabs!
-    * A process is code that your computer is continuously executing - These specific processes you will be running keep running until you stop them. You know something is a process because the Terminal window will not prompt you for more input.
-  * Before we connect to the bluetooth receiver, we want to remove any old devices that may have been previously connected. Open a new tab and type or copy/paste the following command: 
-    * sudo rm /dev/rfcomm0
+* Log in to the computer. Include relevant information (password, etc) here
+* Open a Terminal window via the Applications ... Accessories ... Terminal menu options (or the crtl + alt + t shortcut)
+* Try opening a new Terminal tab using Control-Shift-T. (Remember this shortcut - you'll be running lots of processes later, one in each tab.)
+* Be sure your robot is on and has an "Element Direct" bluetooth receiver attached at its 25-pin serial connector in the center. Make a note of the four hexadecimal digits on the bluetooth receiver -- since there will be several on in the room, you'll need to be sure to pair with the appropriate one.
+* Open a new tab by right-clicking or the control-shift-t shortcut
+  * Each new tab or Terminal window will hold a separate process -- be ready to open lots of new tabs!
+  * A process is code that your computer is continuously executing - These specific processes you will be running keep running until you stop them. You know something is a process because the Terminal window will not prompt you for more input.
+* Before we connect to the bluetooth receiver, we want to remove any old devices that may have been previously connected. Open a new tab and type or copy/paste the following command: 
+  * sudo rm /dev/rfcomm0
     It will prompt you for the lab password, since this is a system file.
 Note: Though the cursor will not move, the password will be typing. This is Terminal's security feature to protect the password.
 It's likely that it will reply No such file or directory ... this is completely OK, it simply means no previous bluetooth connections were established.
