@@ -3,7 +3,7 @@ markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vagrant", ".vagrant", "Vagrantfile"]
 highlighter: pygments
 
-permalink: /:year/:month/:day/:title
+permalink: /robot-motion-planning-labs/:year/:month/:day/:title
 baseurl: http://gcc-robotics.github.io/robot-motion-planning-labs/
 
 # Themes are encouraged to use these universal variables 
