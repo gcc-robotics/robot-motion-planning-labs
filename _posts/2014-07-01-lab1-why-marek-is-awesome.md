@@ -9,12 +9,14 @@ This guide describes the process to configure a Raspberry Pi Model B or Beaglebo
 
 
 ```c++
+
 #include <math.h>
 
 int main(int argc, int argv)
 {
   ROS_INFO("Hello");
 } 
+
 ```
 
 
