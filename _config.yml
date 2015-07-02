@@ -4,6 +4,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 highlighter: pygments
 
 permalink: /:year/:month/:day/:title
+baseurl: http://gcc-robotics.github.io/robot-motion-planning-labs/
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
