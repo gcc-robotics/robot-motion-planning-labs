@@ -8,15 +8,13 @@ zipUrl: https://github.com/gcc-robotics/robot-motion-planning-labs/archive/gh-pa
 This guide describes the process to configure a Raspberry Pi Model B or Beaglebone Black to as a backup server to backup Windows or Linux machines using rsnapshot and then to sync those backups across multiple backup servers using rsync.
 
 
-```c++
-
+```
 #include <math.h>
 
 int main(int argc, int argv)
 {
   ROS_INFO("Hello");
 } 
-
 ```
 
 
