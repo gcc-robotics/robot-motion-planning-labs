@@ -3,7 +3,7 @@ markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vagrant", ".vagrant", "Vagrantfile"]
 highlighter: pygments
 
-permalink: none
+permalink: /:year/:month/:day/:title
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
