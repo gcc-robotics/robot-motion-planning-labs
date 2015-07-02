@@ -38,8 +38,7 @@ ROS uses the command-line in order to accomplish many of its tasks. Let's begin 
 * Log in to the computer. Include relevant information (password, etc) here
 
 * Open a Terminal window via the Applications ... Accessories ... Terminal menu options (or the crtl + alt + t shortcut)
-
-* Try opening a new Terminal tab using Control-Shift-T. (Remember this shortcut - you'll be running lots of processes later, one in each tab.)
+  * Try opening a new Terminal tab using Control-Shift-T. (Remember this shortcut - you'll be running lots of processes later, one in each tab.)
 
 * Be sure your robot is on and has an "Element Direct" bluetooth receiver attached at its 25-pin serial connector in the center. Make a note of the four hexadecimal digits on the bluetooth receiver -- since there will be several on in the room, you'll need to be sure to pair with the appropriate one.
 
@@ -48,10 +47,20 @@ ROS uses the command-line in order to accomplish many of its tasks. Let's begin 
   * A process is code that your computer is continuously executing - These specific processes you will be running keep running until you stop them. You know something is a process because the Terminal window will not prompt you for more input.
 
 * Before we connect to the bluetooth receiver, we want to remove any old devices that may have been previously connected. Open a new tab and type or copy/paste the following command: 
-  * sudo rm /dev/rfcomm0
+  * $ sudo rm /dev/rfcomm0
     It will prompt you for the lab password, since this is a system file.
 Note: Though the cursor will not move, the password will be typing. This is Terminal's security feature to protect the password.
 It's likely that it will reply No such file or directory ... this is completely OK, it simply means no previous bluetooth connections were established.
+
+* Search for bluetooth devices in the area by typing the following command: 
+  * $ hcitool scan
+Find the Element Serial device with your final four hex digits.
+Next, run the command $ sudo rfcomm connect 0 ADDRESS 1
+  * Where ADDRESS is the full hex address of your device, e.g.,
+$ sudo rfcomm connect 0 00:0A:3A:2E:CB:3E 1
+  * Note: Terminal uses control-shift-c for copy and control-shift-v for paste; all other programs don't include the shift. It might take some getting used to!
+If you connect successfully, Terminal will reply with Press CTRL-C for hangup
+
 
 
 
