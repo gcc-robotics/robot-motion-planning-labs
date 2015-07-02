@@ -8,42 +8,52 @@ zipUrl: https://github.com/gcc-robotics/robot-motion-planning-labs/archive/gh-pa
 This guide describes the process to configure a Raspberry Pi Model B or Beaglebone Black to as a backup server to backup Windows or Linux machines using rsnapshot and then to sync those backups across multiple backup servers using rsync.
 
 
-```
-#include <math.h>
+This lab was written for Linux and tested under Ubuntu 14.04.
 
-int main(int argc, int argv)
-{
-  ROS_INFO("Hello");
-} 
-```
+Introduction to Linux
+--------------
+Someone please expand on this.
+    Linux = OS (open source)
+    Linux mascot = a penguin (Tux)
+    Will be using Ubuntu 14.04 LTS
+    CS/IS 172 = Linux class (GCC)
+
+Introduction to Robot Operating System (ROS)
+-----------------
+
+#### subtitle?
+
+The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms.
+Why? Because creating truly robust, general-purpose robot software is hard. From the robot's perspective, problems that seem trivial to humans often vary wildly between instances of tasks and environments. Dealing with these variations is so hard that no single individual, laboratory, or institution can hope to do it on their own.
+
+How to Boot into Ubuntu
+--------------
+The computers in this lab are equipped with both Windows and Ubuntu operating systems. In order to boot into Ubuntu Linux, restart the computer to see the grub menu (a magenta colored page). Windows is the default, so you will need to make a selection for Ubuntu, and voila! Now you are booted into ubuntu.
+
+Command Line
+--------------
+ROS uses the command-line in order to accomplish many of its tasks. Let's begin by connecting to our robot:
+  * Log in to the computer. Include relevant information (password, etc) here
+  * Open a Terminal window via the Applications ... Accessories ... Terminal menu options (or the crtl + alt + t shortcut)
+    * Try opening a new Terminal tab using Control-Shift-T. (Remember this shortcut - you'll be running lots of processes later, one in each tab.)
+  * Be sure your robot is on and has an "Element Direct" bluetooth receiver attached at its 25-pin serial connector in the center. Make a note of the four hexadecimal digits on the bluetooth receiver -- since there will be several on in the room, you'll need to be sure to pair with the appropriate one.
+  * Open a new tab by right-clicking or the control-shift-t shortcut
+    * Each new tab or Terminal window will hold a separate process -- be ready to open lots of new tabs!
+    * A process is code that your computer is continuously executing - These specific processes you will be running keep running until you stop them. You know something is a process because the Terminal window will not prompt you for more input.
+  * Before we connect to the bluetooth receiver, we want to remove any old devices that may have been previously connected. Open a new tab and type or copy/paste the following command: 
+    * sudo rm /dev/rfcomm0
+    It will prompt you for the lab password, since this is a system file.
+Note: Though the cursor will not move, the password will be typing. This is Terminal's security feature to protect the password.
+It's likely that it will reply No such file or directory ... this is completely OK, it simply means no previous bluetooth connections were established.
 
 
-This guide was written for Linux and tested under Ubuntu 13.04.
 
-Considerations
+
+Launching the iRobot Create Driver
 --------------
 The backup drives used will be formated as ext4 which Windows cannot understand by default. You can install a  [Windows ext4 driver][win-ext4-driver].
 
-Required Hardware
------------------
-
-#### Raspberry Pi Model B
-
-* Raspberry Pi Model B
-* 2GB+ SD Card
-* 2 Amp USB Micro power adapter
-* USB hard drive with external power supply
-* Optionaly a case to protect the Raspberry Pi
-
-#### Beaglebone Black
-
-* Beaglebone Black
-* 2GB+ micro SD card
-* 2 Amp 5 Volt power adapter for the Beaglebone Black
-* USB hard drive with external power supply
-* Optionaly a case to protect the Beaglebone Black
-
-Setup Guide
+Teleop Keyboard
 -----------
 
 * Install Arch Linux ARM on your device: (Click the Installation tab and follow the instructions)
