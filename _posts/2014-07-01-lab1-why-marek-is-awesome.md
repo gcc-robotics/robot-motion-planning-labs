@@ -114,24 +114,24 @@ Teleop Keyboard
 
 Control Your Turtlebot!
 
-Moving around:
+    Moving around:
 
-   u    i    o
+     u    i    o
 
-   j    k    l
+     j    k    l
 
-   m    ,    .
+     m    ,    .
 
 
-q/z : increase/decrease max speeds by 10%
+    q/z : increase/decrease max speeds by 10%
 
-w/x : increase/decrease only linear speed by 10%
+    w/x : increase/decrease only linear speed by 10%
 
-e/c : increase/decrease only angular speed by 10%
+    e/c : increase/decrease only angular speed by 10%
 
-space key, k : force stop
+    space key, k : force stop
 
-anything else : stop smoothly
+    anything else : stop smoothly
 
 
 CTRL-C to quit
