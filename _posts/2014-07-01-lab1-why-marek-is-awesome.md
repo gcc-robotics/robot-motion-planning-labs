@@ -5,17 +5,21 @@ description: This is an awesome lab!
 zipUrl: https://github.com/gcc-robotics/robot-motion-planning-labs/archive/gh-pages.zip
 ---
 
-This guide describes the process to configure a Raspberry Pi Model B or Beaglebone Black to as a backup server to backup Windows or Linux machines using rsnapshot and then to sync those backups across multiple backup servers using rsync.
+This lab is designed to serve as a jump start into Linux and ROS. By the end of this lab you should be able to control your iRobot Create base with a teleoperated keyboard.
 
 
-This lab was written for Linux and tested under Ubuntu 14.04.
+This lab was written for Linux and tested under Ubuntu 14.04 LTS.
 
 Introduction to Linux
 --------------
 Someone please expand on this.
+
     Linux = OS (open source)
+
     Linux mascot = a penguin (Tux)
+
     Will be using Ubuntu 14.04 LTS
+
     CS/IS 172 = Linux class (GCC)
 
 Introduction to Robot Operating System (ROS)
