@@ -44,7 +44,7 @@ The rostopic command-line tool displays information about ROS topics. Currently,
 
 * To see the information from the topic (for example, velocity) we can use the following command:
 
-    $ rostopic echo /mobile_base/commands/velocity
+      $ rostopic echo /mobile_base/commands/velocity
 
 * If the robot is currently stationary, you should see something like this:
 
@@ -58,6 +58,7 @@ The rostopic command-line tool displays information about ROS topics. Currently,
         z: 0.0
 
 * We can publish to a topic, for example:
+
       $ rostopic pub /mobile_base/commands/velocity geometry_msgs/Twist “linear:
         x: 1.0
         y: 0.0
@@ -66,5 +67,6 @@ The rostopic command-line tool displays information about ROS topics. Currently,
         x: 0.0
         y: 0.0
         z: 0.0”
+        
 This should change the velocity of the robot. This shows an alternative way to control the robot directly without using a node.
 
