@@ -55,9 +55,12 @@ __Note__: Though the cursor will not move, the password will be typing. This is 
 It's likely that it will reply No such file or directory ... this is completely OK, it simply means no previous bluetooth connections were established.
 
 * Search for bluetooth devices in the area by typing the following command: 
+
     __$ hcitool scan__
+
 Find the Element Serial device with your final four hex digits.
 Next, run the command 
+
     __$ sudo rfcomm connect 0 ADDRESS 1__
 
   * Where ADDRESS is the full hex address of your device, e.g.,
@@ -77,6 +80,7 @@ Launching the iRobot Create Driver
 In order to command and drive the iRobot Create base we need to run a driver. A driver converts high level commands into voltages that control the hardware. 
 
 * Open a new tab by right-clicking or the control-shift-t shortcut, and type the following:
+
     __$ roscore__
 
 * Again, open a new tab by right-clicking or the control-shift-t shortcut
@@ -127,4 +131,5 @@ anything else : stop smoothly
 
 
 CTRL-C to quit
+
 * Get moving!
