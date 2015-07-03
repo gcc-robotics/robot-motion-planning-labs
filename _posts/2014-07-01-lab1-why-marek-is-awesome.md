@@ -52,7 +52,7 @@ ROS uses the command-line in order to accomplish many of its tasks. Let's begin 
 
 * Before we connect to the bluetooth receiver, we want to remove any old devices that may have been previously connected. Open a new tab and type or copy/paste the following command: 
 
-    __$ sudo rm /dev/rfcomm0__
+      __$ sudo rm /dev/rfcomm0__
 
     It will prompt you for the lab password, since this is a system file.
 __Note__: Though the cursor will not move, the password will be typing. This is Terminal's security feature to protect the password.
@@ -60,7 +60,7 @@ It's likely that it will reply No such file or directory ... this is completely 
 
 * Search for bluetooth devices in the area by typing the following command: 
 
-    __$ hcitool scan__
+      __$ hcitool scan__
 
 Find the Element Serial device with your final four hex digits.
 Next, run the command 
@@ -69,7 +69,7 @@ Next, run the command
 
   * Where ADDRESS is the full hex address of your device, e.g.,
 
-    __$ sudo rfcomm connect 0 00:0A:3A:2E:CB:3E 1__
+      __$ sudo rfcomm connect 0 00:0A:3A:2E:CB:3E 1__
 
   * Note: Terminal uses control-shift-c for copy and control-shift-v for paste; all other programs don't include the shift. It might take some getting used to!
 If you connect successfully, Terminal will reply with Press CTRL-C for hangup
@@ -85,20 +85,20 @@ In order to command and drive the iRobot Create base we need to run a driver. A 
 
 * Open a new tab by right-clicking or the control-shift-t shortcut, and type the following:
 
-    __$ roscore__
+      __$ roscore__
 
 * Again, open a new tab by right-clicking or the control-shift-t shortcut
 
 * We first want to set up our environment variables, we essentially want the TURTLEBOT_SERIAL_PORT variable to connect at “/dev/rfcomm0”
   * Type or copy paste the following two commands:
 
-    __$ echo "export TURTLEBOT_SERIAL_PORT=/dev/rfcomm0" >> ~/turtlebot/devel/setup.sh__
+      __$ echo "export TURTLEBOT_SERIAL_PORT=/dev/rfcomm0" >> ~/turtlebot/devel/setup.sh__
 
-    __$ source ~/turtlebot/devel/setup.bash__
+      __$ source ~/turtlebot/devel/setup.bash__
 
 * Now we run the launch file using roslaunch. roslaunch is a tool that starts multiple nodes. Type or copy paste the following two commands:
 
-    __$ roslaunch turtlebot_bringup minimal.launch__
+      __$ roslaunch turtlebot_bringup minimal.launch__
 
   * This will beep when connected
 
@@ -108,7 +108,7 @@ Teleop Keyboard
 
 * Open a new tab by right-clicking or the control-shift-t shortcut, and launch the teleop keyboard node by typing or copying and pasting the following:
 
-    $ roslaunch turtlebot_teleop keyboard_teleop.launch
+      $ roslaunch turtlebot_teleop keyboard_teleop.launch
 
 * You should see the following menu
 
