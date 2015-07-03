@@ -56,7 +56,7 @@ ROS uses the command-line in order to accomplish many of its tasks. Let's begin 
 
     It will prompt you for the lab password, since this is a system file.
 __Note__: Though the cursor will not move, the password will be typing. This is Terminal's security feature to protect the password.
-It's likely that it will reply No such file or directory ... this is completely OK, it simply means no previous bluetooth connections were established.
+It's likely that it will reply "No such file or directory ..." this is completely OK, it simply means no previous bluetooth connections were established.
 
 * Search for bluetooth devices in the area by typing the following command: 
 
@@ -96,7 +96,7 @@ In order to command and drive the iRobot Create base we need to run a driver. A 
 
         $ source ~/turtlebot/devel/setup.bash
 
-* Now we run the launch file using roslaunch. roslaunch is a tool that starts multiple nodes. Type or copy paste the following two commands:
+* Now we run the launch file using roslaunch. roslaunch is a tool that starts multiple nodes. Type or copy paste the following command:
 
         $ roslaunch turtlebot_bringup minimal.launch
 
@@ -136,4 +136,4 @@ anything else : stop smoothly
 
 CTRL-C to quit
 
-* Get moving!
+* Get moving! You are now ready to control your robot with the above keys. Try moving in certain shapes, i.e., squares, triangles, etc.
