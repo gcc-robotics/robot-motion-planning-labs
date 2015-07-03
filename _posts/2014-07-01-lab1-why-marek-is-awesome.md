@@ -110,7 +110,7 @@ Teleop Keyboard
 
       $ roslaunch turtlebot_teleop keyboard_teleop.launch
 
-* You should see the following menu
+* You should see the following menu:
 
       Control Your Turtlebot!
 
@@ -134,6 +134,6 @@ Teleop Keyboard
       anything else : stop smoothly
 
 
-CTRL-C to quit
+      CTRL-C to quit
 
 * Get moving! You are now ready to control your robot with the above keys. Try moving in certain shapes, i.e., squares, triangles, etc.
