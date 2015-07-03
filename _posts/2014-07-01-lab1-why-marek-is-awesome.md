@@ -112,7 +112,7 @@ Teleop Keyboard
 
 * You should see the following menu
 
-Control Your Turtlebot!
+    Control Your Turtlebot!
 
     Moving around:
 
