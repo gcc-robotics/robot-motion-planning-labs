@@ -69,7 +69,7 @@ Next, run the command
 
   * Where ADDRESS is the full hex address of your device, e.g.,
 
-      $ sudo rfcomm connect 0 00:0A:3A:2E:CB:3E 1
+        $ sudo rfcomm connect 0 00:0A:3A:2E:CB:3E 1
 
   * Note: Terminal uses control-shift-c for copy and control-shift-v for paste; all other programs don't include the shift. It might take some getting used to!
 If you connect successfully, Terminal will reply with Press CTRL-C for hangup
