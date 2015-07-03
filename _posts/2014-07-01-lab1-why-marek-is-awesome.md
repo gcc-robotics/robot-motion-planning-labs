@@ -47,17 +47,23 @@ ROS uses the command-line in order to accomplish many of its tasks. Let's begin 
   * A process is code that your computer is continuously executing - These specific processes you will be running keep running until you stop them. You know something is a process because the Terminal window will not prompt you for more input.
 
 * Before we connect to the bluetooth receiver, we want to remove any old devices that may have been previously connected. Open a new tab and type or copy/paste the following command: 
-  * $ sudo rm /dev/rfcomm0
+
+    __$ sudo rm /dev/rfcomm0__
+
     It will prompt you for the lab password, since this is a system file.
 __Note__: Though the cursor will not move, the password will be typing. This is Terminal's security feature to protect the password.
 It's likely that it will reply No such file or directory ... this is completely OK, it simply means no previous bluetooth connections were established.
 
 * Search for bluetooth devices in the area by typing the following command: 
-  * $ hcitool scan
+    __$ hcitool scan__
 Find the Element Serial device with your final four hex digits.
-Next, run the command $ sudo rfcomm connect 0 ADDRESS 1
+Next, run the command 
+    __$ sudo rfcomm connect 0 ADDRESS 1__
+
   * Where ADDRESS is the full hex address of your device, e.g.,
-$ sudo rfcomm connect 0 00:0A:3A:2E:CB:3E 1
+
+    __$ sudo rfcomm connect 0 00:0A:3A:2E:CB:3E 1__
+
   * Note: Terminal uses control-shift-c for copy and control-shift-v for paste; all other programs don't include the shift. It might take some getting used to!
 If you connect successfully, Terminal will reply with Press CTRL-C for hangup
 
@@ -71,20 +77,20 @@ Launching the iRobot Create Driver
 In order to command and drive the iRobot Create base we need to run a driver. A driver converts high level commands into voltages that control the hardware. 
 
 * Open a new tab by right-clicking or the control-shift-t shortcut, and type the following:
-    $ roscore
+    __$ roscore__
 
 * Again, open a new tab by right-clicking or the control-shift-t shortcut
 
 * We first want to set up our environment variables, we essentially want the TURTLEBOT_SERIAL_PORT variable to connect at “/dev/rfcomm0”
   * Type or copy paste the following two commands:
 
-    $ echo "export TURTLEBOT_SERIAL_PORT=/dev/rfcomm0" >> ~/turtlebot/devel/setup.sh
+    __$ echo "export TURTLEBOT_SERIAL_PORT=/dev/rfcomm0" >> ~/turtlebot/devel/setup.sh__
 
-    $ source ~/turtlebot/devel/setup.bash
+    __$ source ~/turtlebot/devel/setup.bash__
 
 * Now we run the launch file using roslaunch. roslaunch is a tool that starts multiple nodes. Type or copy paste the following two commands:
 
-    $ roslaunch turtlebot_bringup minimal.launch
+    __$ roslaunch turtlebot_bringup minimal.launch__
 
   * This will beep when connected
 
@@ -99,17 +105,26 @@ Teleop Keyboard
 * You should see the following menu
 
 Control Your Turtlebot!
----------------------------
+
 Moving around:
+
    u    i    o
+
    j    k    l
+
    m    ,    .
 
+
 q/z : increase/decrease max speeds by 10%
+
 w/x : increase/decrease only linear speed by 10%
+
 e/c : increase/decrease only angular speed by 10%
+
 space key, k : force stop
+
 anything else : stop smoothly
 
+
 CTRL-C to quit
-Get moving!
+* Get moving!
