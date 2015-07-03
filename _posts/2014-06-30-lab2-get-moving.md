@@ -70,3 +70,21 @@ The rostopic command-line tool displays information about ROS topics. Currently,
         
 This should change the velocity of the robot. This shows an alternative way to control the robot directly without using a node.
 
+Catkin_make
+-----------------
+
+cd = change directory (lets you change the directory you are in at terminal)
+ls = lists the folders in the directory
+catkin_make = compiles → creates build/ devel/ folders
+  builds packages
+  call catkin_make after every changes made in the code
+  call catkin_make in the root of your catkin workspace
+catkin workspace = directory that contains your package which contains your nodes which are your codes    
+
+
+ROS nodes in C++
+-----------------
+
+We have provided a sample ROS C++ node that publishes velocity commands in order to move in a square. This publishes the same topics from part B above.
+Example will be provided. The example node will contain the code that will drive the robot in a square pattern.
+Using the example code, change the velocity code and timing to code the robot to move in different patterns (circle, triangle, hexagon).
