@@ -67,10 +67,47 @@ If you connect successfully, Terminal will reply with Press CTRL-C for hangup
 
 Launching the iRobot Create Driver
 --------------
-The backup drives used will be formated as ext4 which Windows cannot understand by default. You can install a  [Windows ext4 driver][win-ext4-driver].
+
+In order to command and drive the iRobot Create base we need to run a driver. A driver converts high level commands into voltages that control the hardware. 
+
+* Open a new tab by right-clicking or the control-shift-t shortcut, and type the following:
+    $ roscore
+
+* Again, open a new tab by right-clicking or the control-shift-t shortcut
+
+* We first want to set up our environment variables, we essentially want the TURTLEBOT_SERIAL_PORT variable to connect at “/dev/rfcomm0”
+  * Type or copy paste the following two commands:
+    $ echo "export TURTLEBOT_SERIAL_PORT=/dev/rfcomm0" >> ~/turtlebot/devel/setup.sh
+    $ source ~/turtlebot/devel/setup.bash
+
+* Now we run the launch file using roslaunch. roslaunch is a tool that starts multiple nodes. Type or copy paste the following two commands:
+    $ roslaunch turtlebot_bringup minimal.launch
+  * This will beep when connected
+
 
 Teleop Keyboard
 -----------
+
+Open a new tab by right-clicking or the control-shift-t shortcut, and launch the teleop keyboard node by typing or copying and pasting the following:
+roslaunch turtlebot_teleop keyboard_teleop.launch
+ You should see the following menu
+
+Control Your Turtlebot!
+---------------------------
+Moving around:
+   u    i    o
+   j    k    l
+   m    ,    .
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+space key, k : force stop
+anything else : stop smoothly
+
+CTRL-C to quit
+Get moving!
+
 
 * Install Arch Linux ARM on your device: (Click the Installation tab and follow the instructions)
   * [Raspberry Pi][raspberry-pi-archlinux]
