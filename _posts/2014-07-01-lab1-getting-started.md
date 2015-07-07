@@ -2,7 +2,7 @@
 layout: post
 title: "Lab 1: Getting Started!"
 description: This is an awesome lab!
-zipUrl: https://github.com/gcc-robotics/robot-motion-planning-labs/archive/gh-pages.zip
+zipFile: gh-pages.zip
 ---
 
 This lab is designed to serve as a jump start into Linux and ROS. By the end of this lab you should be able to control your iRobot Create base with a teleoperated keyboard.
