@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lab 2: Get Moving!"
+title: "Lab 2: Get Moving with C++"
 description: This is another awesome lab!
 zipFile: gh-pages.zip
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lab 7: Getting Started with Kinect"
+title: "Lab 6: Robot Tracking and Navigation Using Color Thresholding"
 description: TBD!
 zipFile: gh-pages.zip
 ---
