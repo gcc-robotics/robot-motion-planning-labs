@@ -2,7 +2,7 @@
 layout: post
 title: "Lab 2: Get Moving with C++"
 description: This is another awesome lab!
-zipFile: gh-pages.zip
+zipFile: intro_to_motion.zip
 ---
 
 I'll write an introduction here - Jezmin
