@@ -99,7 +99,7 @@ If you connect successfully, Terminal will reply with Press CTRL-C for hangup
 Terminal Commands
 --------------
 
-Before moving on, you need to learn how to use some of the terminal commands. 
+Before moving on, you need to learn how to use some of the Terminal commands. 
 We will only go over few and essential commands.
 
 * __pwd__: This command (print working directory) allows the user to know which 
