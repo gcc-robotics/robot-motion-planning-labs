@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Lab 1: Getting Started!"
-description: This is an awesome lab!
+description: This lab will introduce you to the linux operating system, Terminal, 
+Terminal commands, iRobot driver, and Teleop keyboard controls of iRobot.
 zipFile: gh-pages.zip
 ---
 
@@ -184,7 +185,7 @@ the teleop keyboard node by typing or copying and pasting the following:
 			$ roslaunch turtlebot_teleop keyboard_teleop.launch
 
 * You should see the following menu:
-
+This is an awesome lab!
 			Control Your Turtlebot!
 
 			Moving around:
