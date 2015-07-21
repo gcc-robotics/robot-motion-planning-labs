@@ -42,7 +42,8 @@ The rostopic command-line tool displays information about ROS topics. Currently,
       /zeroconf/lost_connections
       /zeroconf/new_connections
 
-* To see the information from the topic (for example, velocity) we can use the following command:
+* To see the information from the topic (for example, velocity) we can use the 
+  following command:
 
       $ rostopic echo /mobile_base/commands/velocity
 
@@ -68,7 +69,8 @@ The rostopic command-line tool displays information about ROS topics. Currently,
         y: 0.0
         z: 0.0”
         
-This should change the velocity of the robot. This shows an alternative way to control the robot directly without using a node.
+This should change the velocity of the robot. This shows an alternative way to 
+  control the robot directly without using a node.
 
 Catkin_make
 -----------------
@@ -79,12 +81,28 @@ catkin_make = compiles → creates build/ devel/ folders
   builds packages
   call catkin_make after every changes made in the code
   call catkin_make in the root of your catkin workspace
-catkin workspace = directory that contains your package which contains your nodes which are your codes    
+catkin workspace = directory that contains your package which contains your nodes 
+ which are your codes    
 
 
 ROS nodes in C++
 -----------------
 
-We have provided a sample ROS C++ node that publishes velocity commands in order to move in a square. This publishes the same topics from part B above.
-Example will be provided. The example node will contain the code that will drive the robot in a square pattern.
-Using the example code, change the velocity code and timing to code the robot to move in different patterns (circle, triangle, hexagon).
+We have provided a sample ROS C++ node that publishes velocity commands in order
+ to move in a square. This publishes the same topics from part B above. First 
+ download the zip file and extract into your catkin workspace. Running 
+
+    $ catkin_make 
+
+ from your workspace will compile your starter code and you should be able to run
+ the sample program using 
+
+    $ rosrun lab2_pkg lab2_node
+
+ Note: The code written was written on just one iCreate. Each robot may be calibrated slightly
+ differently, so if your robot does not make a perfect square, do not be alarmed,
+ this will not affect your ability to complete the challenge. How have we done this? 
+ Possibly, we wrote a code that went straight and turned 90 degrees, and then copied 
+ and pasted it four times within a single function. Take a look at the goRobotGo 
+ function in iRobot.h, using this code, change the velocity code and timing to 
+ move the robot in different patterns (circle, triangle, hexagon). 
