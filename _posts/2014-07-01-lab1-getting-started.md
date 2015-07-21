@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Lab 1: Getting Started!"
-description: This is an awesome lab!
+description: "This lab will introduce you to the linux operating system, Terminal, 
+Terminal commands, iRobot driver, and Teleop keyboard controls of iRobot."
 zipFile: gh-pages.zip
 ---
 
@@ -50,21 +51,32 @@ by connecting to our robot:
 
 * Open a Terminal window via the Applications ... Accessories ... Terminal menu 
 options (or the crtl + alt + t shortcut)
-	* Try opening a new Terminal tab using Control-Shift-T. (Remember this shortcut - you'll be running lots of processes later, one in each tab.)
+	* Try opening a new Terminal tab using Control-Shift-T. (Remember this shortcut 
+	- you'll be running lots of processes later, one in each tab.)
 
-* Be sure your robot is on and has an "Element Direct" bluetooth receiver attached at its 25-pin serial connector in the center. Make a note of the four hexadecimal digits on the bluetooth receiver -- since there will be several on in the room, you'll need to be sure to pair with the appropriate one.
+* Be sure your robot is on and has an "Element Direct" bluetooth receiver attached 
+at its 25-pin serial connector in the center. Make a note of the four hexadecimal 
+digits on the bluetooth receiver -- since there will be several on in the room, 
+you'll need to be sure to pair with the appropriate one.
 
 * Open a new tab by right-clicking or the control-shift-t shortcut
-	* Each new tab or Terminal window will hold a separate process -- be ready to open lots of new tabs!
-	* A process is code that your computer is continuously executing - These specific processes you will be running keep running until you stop them. You know something is a process because the Terminal window will not prompt you for more input.
+	* Each new tab or Terminal window will hold a separate process -- be ready to 
+	open lots of new tabs!
+	* A process is code that your computer is continuously executing - These specific 
+	processes you will be running keep running until you stop them. You know something 
+	is a process because the Terminal window will not prompt you for more input.
 
-* Before we connect to the bluetooth receiver, we want to remove any old devices that may have been previously connected. Open a new tab and type or copy/paste the following command: 
+* Before we connect to the bluetooth receiver, we want to remove any old devices 
+that may have been previously connected. Open a new tab and type or copy/paste the 
+following command: 
 
 			$ sudo rm /dev/rfcomm0
 
 		It will prompt you for the lab password, since this is a system file.
-__Note__: Though the cursor will not move, the password will be typing. This is Terminal's security feature to protect the password.
-It's likely that it will reply "No such file or directory ..." this is completely OK, it simply means no previous bluetooth connections were established.
+__Note__: Though the cursor will not move, the password will be typing. This is 
+Terminal's security feature to protect the password.
+It's likely that it will reply "No such file or directory ..." this is completely 
+OK, it simply means no previous bluetooth connections were established.
 
 * Search for bluetooth devices in the area by typing the following command: 
 
@@ -79,25 +91,29 @@ Next, run the command
 
 				$ sudo rfcomm connect 0 00:0A:3A:2E:CB:3E 1
 
-	* Note: Terminal uses control-shift-c for copy and control-shift-v for paste; all other programs don't include the shift. It might take some getting used to!
+	* Note: Terminal uses control-shift-c for copy and control-shift-v for paste; 
+	all other programs don't include the shift. It might take some getting used to!
 If you connect successfully, Terminal will reply with Press CTRL-C for hangup
 
 
 Terminal Commands
 --------------
 
-Before moving on, you need to learn how to use some of the terminal commands. 
+Before moving on, you need to learn how to use some of the Terminal commands. 
 We will only go over few and essential commands.
 
-* __pwd__: This command (print working directory) allows the user to know which directory you are currently located: 
+* __pwd__: This command (print working directory) allows the user to know which 
+directory you are currently located: 
 
 		$ pwd
 
-* __ls__: This command (list) get the list of the available diretries in your current directory:
+* __ls__: This command (list) get the list of the available diretries in your 
+current directory:
 
 		$ ls
 
-* __cd__: This command (change directory) get the list of the available diretries in your current directory:
+* __cd__: This command (change directory) get the list of the available diretries 
+in your current directory:
 
 	* To navigate into the root directory
 
@@ -125,7 +141,8 @@ We will only go over few and essential commands.
 
 			$ gedit source.cpp
 
-	* __subl__: Sublime text editor, installed on the lab computers, but private editor:
+	* __subl__: Sublime text editor, installed on the lab computers, but private 
+	editor:
 
 			$ subl source.cpp
 
@@ -133,22 +150,26 @@ We will only go over few and essential commands.
 Launching the iRobot Create Driver
 --------------
 
-In order to command and drive the iRobot Create base we need to run a driver. A driver converts high level commands into voltages that control the hardware. 
+In order to command and drive the iRobot Create base we need to run a driver. 
+A driver converts high level commands into voltages that control the hardware. 
 
-* Open a new tab by right-clicking or the control-shift-t shortcut, and type the following:
+* Open a new tab by right-clicking or the control-shift-t shortcut, and type the 
+following:
 
 			$ roscore
 
 * Again, open a new tab by right-clicking or the control-shift-t shortcut
 
-* We first want to set up our environment variables, we essentially want the TURTLEBOT_SERIAL_PORT variable to connect at “/dev/rfcomm0”
+* We first want to set up our environment variables, we essentially want the 
+TURTLEBOT_SERIAL_PORT variable to connect at “/dev/rfcomm0”
 	* Type or copy paste the following two commands:
 
 				$ echo "export TURTLEBOT_SERIAL_PORT=/dev/rfcomm0" >> ~/turtlebot/devel/setup.sh
 
 				$ source ~/turtlebot/devel/setup.bash
 
-* Now we run the launch file using roslaunch. roslaunch is a tool that starts multiple nodes. Type or copy paste the following command:
+* Now we run the launch file using roslaunch. roslaunch is a tool that starts multiple 
+nodes. Type or copy paste the following command:
 
 				$ roslaunch turtlebot_bringup minimal.launch
 
@@ -158,12 +179,13 @@ In order to command and drive the iRobot Create base we need to run a driver. A 
 Teleop Keyboard
 -----------
 
-* Open a new tab by right-clicking or the control-shift-t shortcut, and launch the teleop keyboard node by typing or copying and pasting the following:
+* Open a new tab by right-clicking or the control-shift-t shortcut, and launch 
+the teleop keyboard node by typing or copying and pasting the following:
 
 			$ roslaunch turtlebot_teleop keyboard_teleop.launch
 
 * You should see the following menu:
-
+This is an awesome lab!
 			Control Your Turtlebot!
 
 			Moving around:
@@ -188,4 +210,5 @@ Teleop Keyboard
 
 			CTRL-C to quit
 
-* Get moving! You are now ready to control your robot with the above keys. Try moving in certain shapes, i.e., squares, triangles, etc.
+* Get moving! You are now ready to control your robot with the above keys. Try 
+moving in certain shapes, i.e., squares, triangles, etc.
