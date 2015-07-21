@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Lab 1: Getting Started!"
-description: This lab will introduce you to the linux operating system, Terminal, 
-Terminal commands, iRobot driver, and Teleop keyboard controls of iRobot.
+description: "This lab will introduce you to the linux operating system, Terminal, 
+Terminal commands, iRobot driver, and Teleop keyboard controls of iRobot."
 zipFile: gh-pages.zip
 ---
 
