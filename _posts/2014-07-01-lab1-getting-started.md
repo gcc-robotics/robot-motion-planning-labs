@@ -100,22 +100,22 @@ We will only go over few and essential commands.
 * __cd__: This command (change directory) get the list of the available diretries in your current directory:
 
 	* To navigate into the root directory
-		$ cd /
+			$ cd /
 	* To navigate into the home directory
-	 $ cd ~
+			$ cd ~
 	* To navigate up one directory level
-	 $ cd ..
+			$ cd ..
 	* To navigate to previous directory
-		$ cd -
+			$ cd -
 	* To navigate to multiple levels of directory
-		$ cd /directory/subdirectory/subsubdirectory
+			$ cd /directory/subdirectory/subsubdirectory
 		
 * To open source files to editor, you will have two possiblities.
 
 	* __gedit__: Built in editor:
-		$ gedit source.cpp
+			$ gedit source.cpp
 	* subl: Sublime text editor, installed on the lab computers, but private editor:
-		% subl source.cpp
+			$ subl source.cpp
 
 
 Launching the iRobot Create Driver
