@@ -12,15 +12,8 @@ This lab was written for Linux and tested under Ubuntu 14.04 LTS.
 
 Introduction to Linux
 --------------
-Someone please expand on this.
 
-    Linux = OS (open source)
-
-    Linux mascot = a penguin (Tux)
-
-    Will be using Ubuntu 14.04 LTS
-
-    CS/IS 172 = Linux class (GCC)
+Linux is open source operating system and is developed by the community. There are many different version of linux available, and Ubuntu is one of these operating systems that is most commonly used. Hence, we will be using Ubuntu; more precisely, we will be using Ubuntu 14.04 LTS. For more information about the linux operating system, there is a course at Glendale Community College (CS/IS 172) available.
 
 Introduction to Robot Operating System (ROS)
 -----------------
