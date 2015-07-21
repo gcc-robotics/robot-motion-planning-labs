@@ -2,7 +2,7 @@
 layout: post
 title: "Lab 2: Get Moving with C++"
 description: This is another awesome lab!
-zipFile: gh-pages.zip
+zipFile: https://github.com/gcc-robotics/robot-motion-planning-labs/blob/gh-pages/downloads/intro_to_motion.tar.gz
 ---
 
 I'll write an introduction here - Jezmin
