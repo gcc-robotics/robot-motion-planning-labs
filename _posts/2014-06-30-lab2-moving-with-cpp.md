@@ -81,8 +81,8 @@ similar to compiling in C++.
   * First and foremost, you must call "catkin_make" command in root of your catkin workspace.
 Assuming your catkin workspace is in ~/root.
 
-    $ cd ~/root
-    $ catkin_make
+      $ cd ~/root
+      $ catkin_make
 
   * A catkin workspace is a place where you modify, build, and install catkin packages.
 
