@@ -9,15 +9,16 @@ zipFile: gh-pages.zip
 Introduction
 --------------
 
-FSM or simply state machine is a model to design computer programs. Most of robots
-use FSM to complete certain tasks. In this lab, you will be using the iRobot's 
-bumper sensors to define certain actions when the bumper sensors are triggered.
+FSM (Finite State Machines) or simply state machine is a model to design computer 
+programs. Most of robots use FSM to complete certain tasks. In this lab, you will
+be using the iRobot's bumper sensors to define certain actions when the bumper 
+sensors are triggered.
 
 
 Preliminaries
 --------------
 
-This lab will involving FSM (Finite State Machines) to control the iRobot to carry
+This lab will involving FSM to control the iRobot to carry
 out certain tasks. Use the instructions from the Getting Started lab in order to 
 connect to the create base and launch the drivers except the keyboard driver. 
 
@@ -45,7 +46,7 @@ using are known as topics in ROS terminology.
 	* In particular, run rostopic list to see all the topics available at the momment.
 	  Which are the ones you are interested in.
 
-	  	$ rostopic list
+		$ rostopic list
 
 	* If you do not see the topic mobile_base/sensors/core, try reconnecting your
 	  iRobot following the lab 1 commands.
