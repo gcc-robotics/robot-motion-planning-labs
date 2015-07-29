@@ -58,12 +58,28 @@ using are known as topics in ROS terminology.
 	* Try echoing the sensor messages and gently tap the bumpers of your iRobot.
 	  This should trigger different sensor messages on your Terminal.
 
+Sensor Subscribers
+--------------
+
+ROS's fundamental capability includes easy communication among distinct programs. 
+Previously, we went over the communication using publisher. This lab will introduce 
+to a different way of communication called subscriber.
+
+	* If a program wants access to a streaming data, it uses subscriber to access them
+
+The subscriber, like the word indicates, subscribes to a message to access the data. 
+In this lab, we require the bumper sensor data. So previously, we saw the ROS topics 
+through your Terminal, but those data printed on the Terminal is not necessary being 
+used in the program. So in order to access the data, we use the subscriber in our codes 
+to listen to the topics. The example of how subscribers are used is present on the 
+skeleton code that is provided for you.
+
 Returning to FSM
 --------------
 
 The example code includes few functions that make up the FSM itself. These functions
 should include:
-	
+
 	* state_start
 
 	* state_forward
@@ -76,6 +92,8 @@ Read over the functions and determine the relationship among the states. The tra
 between the states are triggered by external events, such as elapsed time or a sensor
 trigger.
 
+Lab Instructions
+--------------
 
 In this lab, you will be adding multiple states in order to carry out the task of
 following the walls of this classroom. This task must be done through use of FSM.
