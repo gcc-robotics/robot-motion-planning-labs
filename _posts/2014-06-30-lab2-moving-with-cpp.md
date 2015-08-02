@@ -75,18 +75,35 @@ This should change the velocity of the robot. This shows an alternative way to
 Catkin_make
 -----------------
 
-cd = change directory (lets you change the directory you are in at terminal)
-ls = lists the folders in the directory
-catkin_make = compiles → creates build/ devel/ folders
-  builds packages
-  call catkin_make after every changes made in the code
-  call catkin_make in the root of your catkin workspace
-catkin workspace = directory that contains your package which contains your nodes 
- which are your codes    
+The catkin_make command is a tool for building code in a catkin workspace. This is
+similar to compiling in C++.
+
+  * First and foremost, you must call "catkin_make" command in root of your catkin workspace.
+    Assuming your catkin workspace is in ~/root.
+
+    $ cd ~/root
+    $ catkin_make
+
+  * A catkin workspace is a place where you modify, build, and install catkin packages.
+
+  * At first catkin workspace should contain /src directory.
+
+  * The /src directory is the directory which contains the node (next section will cover)
+  , which is where your codes will be stored and modified.
+
+  * As a result of catkin_make command should have created /devel and /build folders in your root.
 
 
 ROS nodes in C++
 -----------------
+
+A node in ROS is an executable that uses ROS to communicate to other nodes. A node
+is nothing more than an executable file within ROS packages.
+
+  * These nodes will be used in order to complete the labs. Inside these nodes, you
+  will be modifying the codes in order to carry out the tasks for the labs.
+
+  * These nodes are stored inside the /src directory of your catkin workspace.
 
 We have provided a sample ROS C++ node that publishes velocity commands in order
  to move in a square. This publishes the same topics from part B above. First 
