@@ -62,38 +62,38 @@ installation. The command may take quite a long time to complete. That is ok.
 Now we are ready to start installing ROS Indigo, run the following commands in 
 sequence in the same terminal window.
 
-1. 
+1.
 
-		sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-		
+	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
 2.
-	
+
 	sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116
-	
+
 3.
-	
+
 	sudo apt-get update
-	
+
 4.
-	
+
 	sudo apt-get install ros-indigo-desktop-full
-	
+
 5.
-	
+
 	sudo rosdep init
-	
+
 6.
-	
+
 	rosdep update
-	
+
 7.
-	
+
 	echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
-	
+
 8.
-	
+
 	source ~/.bashrc
-	
+
 
 Done! You have successfully installed ROS on your system.
 
