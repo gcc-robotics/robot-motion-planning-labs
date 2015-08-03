@@ -5,7 +5,7 @@ description: If you need to configure your computer for use with these labs star
 ---
 
 If you are using GCC Robotics Lab computers you can skip this lab and head 
-strait over to Lab 1. This guide will be useful if you want to configure your 
+straight over to Lab 1. This guide will be useful if you want to configure your 
 personal laptop so you can continue working at home.
 
 To be able to follow along with this series of labs you will need to have 
@@ -18,6 +18,10 @@ correctly.
 * Ubuntu 14.04
 * ROS Indigo
 * iRobot Create and Microsoft Kinect Drivers
+
+Additionally to connect to the iRobot your computer needs to have Bluetooth. If
+your computer does not have Bluetooth you can buy a USB adapter or use the Lab 
+computers.
 
 Let's jump right in and start with Ubuntu.
 
@@ -37,6 +41,9 @@ need to make sure that this is the version you install.
 
 Boot and login into your newly installed Ubuntu 14.04 Machine.
 
+Next make sure that your computer has internet access we will install the rest 
+of the requirements over the internet.
+
 We will install ROS from the __Terminal__. The __Terminal__ is a text based 
 input / output program which allows you to run different commands. You will 
 learn more about the terminal in Lab 1.
@@ -50,28 +57,59 @@ Type the following command into the new terminal window and hit enter:
 	sudo apt-get update && sudo apt-get upgrade -y
 
 You will be asked for your password if you specified one during the Ubuntu 
-installation.
+installation. The command may take quite a long time to complete. That is ok.
 
-Now we are ready to start installing ROS Indigo run the following commands in 
+Now we are ready to start installing ROS Indigo, run the following commands in 
 sequence in the same terminal window.
 
-* `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
-* `sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116`
-* `sudo apt-get update`
-* `sudo apt-get install ros-indigo-desktop-full`
-* `sudo rosdep init`
-* `rosdep update`
-* `echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc`
-* `source ~/.bashrc`
+1.
+
+	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+2.
+
+	sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116
+
+__This command can fail, before proceeding make sure that the last line of 
+output is: `gpg:		imported: 1`__
+
+3.
+
+	sudo apt-get update
+
+4.
+
+	sudo apt-get install ros-indigo-desktop-full
+
+5.
+
+	sudo rosdep init
+
+6.
+
+	rosdep update
+
+7.
+
+	echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
+
+8.
+
+	source ~/.bashrc
+
 
 Done! You have successfully installed ROS on your system.
 
-If you have any problems during the installation consult 
-[the ROS Inddigo install guide][ros-indigo-install-guide].
+__Before continuing with the installation you should restart your computer to 
+make sure everything went well.__
+
+If you have any problems during the installation consult the 
+[ROS Indigo install guide][ros-indigo-install-guide].
 
 ### Installing iRobot Create Drivers
 
-Run some commands and do shit!
+Next we need to install the iRobot create drivers which will allow us to control
+the robot over Bluetooth using our Ubuntu computer and ROS.
 
 ### Installing Microsoft Kinect Drivers
 
@@ -81,7 +119,10 @@ camera which we will be using to track colored objects.
 Open a new Terminal (or use an existing one if you still have it open) and run 
 the following command:
 
-* `sudo apt-get install libfreenect-dev ros-indigo-freenect-launch`
+* 
+	
+	sudo apt-get install libfreenect-dev ros-indigo-freenect-launch
+
 
 Done! You're ready to move on the Lab 1!
 

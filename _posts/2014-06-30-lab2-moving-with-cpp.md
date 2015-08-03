@@ -94,6 +94,20 @@ similar to compiling in C++.
   * As a result of catkin_make command should have created /devel and /build folders in your root.
 
 
+Publisher
+-----------------
+
+ROS's fundamental capability includes easy communication among distinct programs. 
+One of the ways to communicate in ROS is using publisher. In this lab, we will be 
+using publisher to communicate with the iRobots.
+
+	* If a program has an ongoing stream of data to share, it uses publisher to send out the data.
+
+The publisher, like the word indicates, publishes messages to carry out certain tasks. In 
+this lab, we require to publish the commands in order to control the iRobot. You will be 
+manipulating the speeds of the robot and setting the correct values and publish the message, 
+so that the iRobot can accept the message and move.
+
 ROS nodes in C++
 -----------------
 
