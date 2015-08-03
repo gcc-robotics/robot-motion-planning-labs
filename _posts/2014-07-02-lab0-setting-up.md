@@ -137,8 +137,6 @@ camera which we will be using to track colored objects.
 Open a new Terminal (or use an existing one if you still have it open) and run 
 the following command:
 
-* 
-	
 	sudo apt-get install libfreenect-dev ros-indigo-freenect-launch
 
 
