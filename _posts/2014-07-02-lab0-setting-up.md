@@ -97,6 +97,10 @@ output is: `gpg:		imported: 1`__
 
 	source ~/.bashrc
 
+9.
+
+	sudo usermod -a -G dialout $(whoami)
+
 
 Done! You have successfully installed ROS on your system.
 
@@ -110,6 +114,20 @@ If you have any problems during the installation consult the
 
 Next we need to install the iRobot create drivers which will allow us to control
 the robot over Bluetooth using our Ubuntu computer and ROS.
+
+Run the following commands in sequence in a __Terminal__:
+
+1.
+
+	sudo apt-get install ros-indigo-turtlebot ros-indigo-turtlebot-apps ros-indigo-turtlebot-interactions ros-indigo-turtlebot-simulator ros-indigo-kobuki-ftdi ros-indigo-rocon-remocon ros-indigo-rocon-qt-library ros-indigo-ar-track-alvar-msgs
+
+2.
+
+	printf "export TURTLEBOT_BASE=create\nexport TURTLEBOT_STACKS=circles\nexport TURTLEBOT_3D_SENSOR=kinect\nexport TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0" >> ~/.bashrc
+
+3.
+
+	source ~/.bashrc
 
 ### Installing Microsoft Kinect Drivers
 
