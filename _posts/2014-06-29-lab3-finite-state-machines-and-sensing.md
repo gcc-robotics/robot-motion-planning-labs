@@ -62,7 +62,7 @@ using are known as topics in ROS terminology.
 	* The bumper sensors can be found under the robot. It is labeled as "Contact Points 
 	  for Home Base".
 
-![Irobot Bottom View][irobot-bottom-view]
+![iRobot Bottom View][irobot-bottom-view]
 
 Sensor Subscribers
 --------------
@@ -105,4 +105,4 @@ In this lab, you will be adding multiple states in order to carry out the task o
 following the walls of this classroom. This task must be done through use of FSM.
 The skeleton of the codes are provided in the Zip folders.
 
-[irobot-bottom-view]: ../images/post/irobot-bottom-view.png
+[irobot-bottom-view]: ../images/post/irobot-bottom-view.jpg

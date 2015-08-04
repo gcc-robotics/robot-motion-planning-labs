@@ -90,6 +90,6 @@ front-left and front-right sensors only. Be careful of the classroom ground colo
 the tapes. To test, start with straight lines and slow curves. Make sure your line-following 
 codes are written using FSM.
 
-[irobot-bottom-view]: ../images/post/irobot-bottom-view.png
-[line-follower-turn]: ../images/post/line-follower-turn.png
-[line-follower-foward]: ../images/post/line-follower-foward.png
+[irobot-bottom-view]: ../images/post/irobot-bottom-view.jpg
+[line-follower-turn]: ../images/post/line-follower-turn.jpg
+[line-follower-foward]: ../images/post/line-follower-foward.jpg
