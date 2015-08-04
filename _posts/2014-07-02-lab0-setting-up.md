@@ -123,7 +123,7 @@ Run the following commands in sequence in a __Terminal__:
 
 2.
 
-	printf "export TURTLEBOT_BASE=create\nexport TURTLEBOT_STACKS=circles\nexport TURTLEBOT_3D_SENSOR=kinect\nexport TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0" >> ~/.bashrc
+	printf "export TURTLEBOT_BASE=create\nexport TURTLEBOT_STACKS=circles\nexport TURTLEBOT_3D_SENSOR=kinect\nexport TURTLEBOT_SERIAL_PORT=/dev/rfcomm0" >> ~/.bashrc
 
 3.
 
