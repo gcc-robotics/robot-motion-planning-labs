@@ -103,3 +103,4 @@ In this lab, you will be adding multiple states in order to carry out the task o
 following the walls of this classroom. This task must be done through use of FSM.
 The skeleton of the codes are provided in the Zip folders.
 
+[irobot-bottom-view]: ../images/post/irobot-bottom-view.png
