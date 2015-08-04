@@ -9,7 +9,9 @@ zipFile: gh-pages.zip
 Introduction
 --------------
 
-Jezmin will write this!!!
+FSM (Finite State Machines) were introduced to you on previous lab. In this 
+lab, you will be using FSM in order to carry out a different task using different 
+sensors on the iRobot.
 
 Preliminaries
 --------------
@@ -58,6 +60,11 @@ using are known as topics in ROS terminology.
 	* Try putting different colored item under the cliff sensors and observe the
 	  topics printed on your Terminal.
 
+	* The sensors are found under the robot. It is labeled as "Cliff Sensor Openings" on 
+	  the picture.
+
+![iRobot Bottom View][irobot-bottom-view]
+
 Sensor Subscribers
 --------------
 
@@ -76,7 +83,15 @@ The idea of this lab is:
 
 	* When the cliff sensor detects the line, make appropriate state to get back on track
 
+	* The picture will guide you the task a bit more clearly.
+
+![iRobot Foward][line-follower-foward] ![iRobot Turn][line-follower-turn]
+
 To begin, you must be able to find the threshold the colors using the cliff sensor. Use the 
 front-left and front-right sensors only. Be careful of the classroom ground color with 
 the tapes. To test, start with straight lines and slow curves. Make sure your line-following 
 codes are written using FSM.
+
+[irobot-bottom-view]: ../images/post/irobot-bottom-view.jpg
+[line-follower-turn]: ../images/post/line-follower-turn.jpg
+[line-follower-foward]: ../images/post/line-follower-foward.jpg

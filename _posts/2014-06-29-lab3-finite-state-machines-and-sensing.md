@@ -38,6 +38,7 @@ its connected to the robot.To start, we'll use ROS's command-line tools in order
 to see the data stream that ROS is providing. These "data streams" we've been 
 using are known as topics in ROS terminology.
 
+	
 	* At your Terminal run rostopic to see all the different ROS provided commands
 	  related to topics.
 
@@ -57,6 +58,11 @@ using are known as topics in ROS terminology.
 
 	* Try echoing the sensor messages and gently tap the bumpers of your iRobot.
 	  This should trigger different sensor messages on your Terminal.
+
+	* The bumper sensors can be found under the robot. It is labeled as "Contact Points 
+	  for Home Base".
+
+![iRobot Bottom View][irobot-bottom-view]
 
 Sensor Subscribers
 --------------
@@ -99,3 +105,4 @@ In this lab, you will be adding multiple states in order to carry out the task o
 following the walls of this classroom. This task must be done through use of FSM.
 The skeleton of the codes are provided in the Zip folders.
 
+[irobot-bottom-view]: ../images/post/irobot-bottom-view.jpg
