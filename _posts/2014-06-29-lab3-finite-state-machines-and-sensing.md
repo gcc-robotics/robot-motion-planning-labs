@@ -60,7 +60,7 @@ using are known as topics in ROS terminology.
 
 	* The bumper sensors can be found under the robot. Refer to the picture.
 
-![iRobot Bottom View Picture][irobot-bottom-view]
+![Irobot Bottom View][irobot-bottom-view]
 
 Sensor Subscribers
 --------------
