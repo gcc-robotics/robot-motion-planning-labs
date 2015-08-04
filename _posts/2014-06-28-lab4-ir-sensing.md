@@ -9,7 +9,9 @@ zipFile: gh-pages.zip
 Introduction
 --------------
 
-Jezmin will write this!!!
+FSM (Finite State Machines) were introduced to you on previous lab. In this 
+lab, you will be using FSM in order to carry out a different task using different 
+sensors on the iRobot.
 
 Preliminaries
 --------------
