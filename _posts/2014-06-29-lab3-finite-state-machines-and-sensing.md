@@ -58,6 +58,10 @@ using are known as topics in ROS terminology.
 	* Try echoing the sensor messages and gently tap the bumpers of your iRobot.
 	  This should trigger different sensor messages on your Terminal.
 
+	* The bumper sensors can be found under the robot. Refer to the picture.
+
+![iRobot Bottom View Picture][irobot-bottom-view]
+
 Sensor Subscribers
 --------------
 
