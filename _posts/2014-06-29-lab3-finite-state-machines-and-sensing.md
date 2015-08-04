@@ -38,7 +38,7 @@ its connected to the robot.To start, we'll use ROS's command-line tools in order
 to see the data stream that ROS is providing. These "data streams" we've been 
 using are known as topics in ROS terminology.
 
-
+	
 	* At your Terminal run rostopic to see all the different ROS provided commands
 	  related to topics.
 
@@ -60,7 +60,7 @@ using are known as topics in ROS terminology.
 	  This should trigger different sensor messages on your Terminal.
 
 	* The bumper sensors can be found under the robot. It is labeled as "Contact Points 
-	for Home Base".
+	  for Home Base".
 
 ![Irobot Bottom View][irobot-bottom-view]
 
