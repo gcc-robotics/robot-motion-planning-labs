@@ -32,9 +32,9 @@ Although you all are likely to come up with different ideas on how to get your r
 
 Next try changing this finite-state machine in a couple of ways. First, change the finite state machine so that it
 
-        * prints the difference in the robot's (x,y) image position between its initial location when it starts in "Forward" state to its position when it transitions into "Backward" state.
+    * prints the difference in the robot's (x,y) image position between its initial location when it starts in "Forward" state to its position when it transitions into "Backward" state.
 
-        * remembers the robot's old image position. This will require defining one or more variables, depending on whether you have a separate name for the x and y components or a single variable for the list/tuple of both components
+    * remembers the robot's old image position. This will require defining one or more variables, depending on whether you have a separate name for the x and y components or a single variable for the list/tuple of both components
 
 Why bother? These changes are useful one for computing the robot's heading in the image, i.e., move for two seconds and compare the pre- and post-locations. 
 
