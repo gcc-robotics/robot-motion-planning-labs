@@ -212,3 +212,40 @@ This is an awesome lab!
 
 * Get moving! You are now ready to control your robot with the above keys. Try 
 moving in certain shapes, i.e., squares, triangles, etc.
+
+Creating a Workspace
+-----------------
+
+A catkin workspace is a folder where you modify, build, and install catkin packages. You 
+will using catkin workspace for all of the labs. 
+
+	* Follow these instructions to create a ROS workspace.
+
+		$ mkdir -p ~/name_your_ws/src
+		$ cd ~/name_your_ws/src
+		$ catkin_init_workspace
+
+	* Now your workspace is ready. The root of your workspace is ~/name_your_ws/ 
+	  and ~/name_your_ws/src is your source space. The source space is where you will store 
+	  your labs. These are called nodes and will be covered in Lab 2.
+
+Catkin_make
+-----------------
+
+The catkin_make command is a tool for building code in a catkin workspace. This is
+similar to compiling in C++.
+
+  * First and foremost, you must call "catkin_make" command in root of your catkin workspace.
+    Assuming your catkin workspace is in ~/root.
+
+    $ cd ~/root
+    $ catkin_make
+
+  * A catkin workspace is a place where you modify, build, and install catkin packages.
+
+  * At first catkin workspace should contain /src directory.
+
+  * The /src directory is the directory which contains the node (next section will cover)
+  , which is where your codes will be stored and modified.
+
+  * As a result of catkin_make command should have created /devel and /build folders in your root.

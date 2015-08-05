@@ -1,3 +1,4 @@
+s
 ---
 layout: post
 title: "Lab 2: Get Moving with C++"
@@ -71,28 +72,6 @@ The rostopic command-line tool displays information about ROS topics. Currently,
         
 This should change the velocity of the robot. This shows an alternative way to 
   control the robot directly without using a node.
-
-Catkin_make
------------------
-
-The catkin_make command is a tool for building code in a catkin workspace. This is
-similar to compiling in C++.
-
-  * First and foremost, you must call "catkin_make" command in root of your catkin workspace.
-    Assuming your catkin workspace is in ~/root.
-
-    $ cd ~/root
-    $ catkin_make
-
-  * A catkin workspace is a place where you modify, build, and install catkin packages.
-
-  * At first catkin workspace should contain /src directory.
-
-  * The /src directory is the directory which contains the node (next section will cover)
-  , which is where your codes will be stored and modified.
-
-  * As a result of catkin_make command should have created /devel and /build folders in your root.
-
 
 Publisher
 -----------------
