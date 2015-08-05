@@ -1,8 +1,7 @@
-s
 ---
 layout: post
 title: "Lab 2: Get Moving with C++"
-description: This lab serves as an introduction to rostopic, catkin_make, ROS nodes, and a simple polygon trace motion.
+description: "This lab serves as an introduction to rostopic, catkin_make, ROS nodes, and a simple polygon trace motion."
 zipFile: intro_to_motion.zip
 ---
 
