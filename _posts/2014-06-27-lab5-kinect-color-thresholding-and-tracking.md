@@ -15,6 +15,7 @@ Preliminaries
 --------------
 
 starter code and setting up the kinect camera
+
 check to see if connected and seeing images on topic
 
 
