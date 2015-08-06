@@ -8,14 +8,14 @@ zipFile: gh-pages.zip
 Introduction
 --------------
 
-This lab will serve as a classic example of a subfield of robotics known as servoing and, in particular, vision-based servoing. The term "servoing" refers to controlling a system by continually measuring the error between the system's current state and its desired state -- and then taking action to reduce that error. Visual servoing uses an error defined in an image, rather than in the physical spatial environment of the robot. 
+This lab will serve as a classic example of a subfield of robotics known as servoing, in particular, vision-based servoing. The term "servoing" refers to controlling a system by continually measuring the error between the system's current state and its desired state -- and then taking action to reduce that error. Visual servoing uses an error defined in an image, rather than in the physical spatial environment of the robot. 
 
 
 Preliminaries
 --------------
 
 We have provided starter code to begin with. As usual with any starter code please take the time
-to understand what is going on. What this code does is combine the control you had over the robot
+to understand what is going on. This code combines the control you had over your robot
 in labs 1, 2, 3, and 4 with the use of the Kinect in Lab 5.
 
 Dressing Up Your Robot 

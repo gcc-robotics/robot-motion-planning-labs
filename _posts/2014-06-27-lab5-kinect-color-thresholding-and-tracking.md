@@ -14,5 +14,31 @@ Computer vision is a rich source of input and one of the more computaionally cha
 Preliminaries
 --------------
 
-stuff about starter code and setting up the kinect camera
-checking to see if connected and seeing images on topic
+starter code and setting up the kinect camera
+check to see if connected and seeing images on topic
+
+
+Introduction to Thresholding
+--------------
+
+It is advantageous to differentiate uniform regions of uniform color, e.g. colored objects, etc..
+In this lab exercise you will use the hue-saturation-value color space. it is a transformation of red-green-blue (RGB) color space that tries to group perceptually similar colors in the same part of the space. 
+
+The hue axis, which is circular, intends to represent roughly what we mean when we use different color names: green, cyan, yellow, etc. The value axis represents the amount of light present in a pixel -- that is, it's greyscale intensity, independent of hue. Finally, the saturation axis intends to capture roughly what we mean by the "richness" of a color, e.g., a deep scarlet would have a high saturation; a pale pink would have a low saturation. By using HSV (hue-saturation-value) and RGB (red-green-blue) thresholds for a particular color, it should be possible to extract regions reliably. 
+
+*include picture here*
+
+Getting Started
+---------------
+
+OpenCV Windows
+--------------
+
+Callback Functions
+--------------
+
+Image Processing with OpenCV
+--------------
+
+Using HSV
+--------------
