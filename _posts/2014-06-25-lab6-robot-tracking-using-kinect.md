@@ -48,6 +48,13 @@ In order to move your robot within the Kinect's view we'll need to capture the x
 
 Getting from Point A to Point B 
 --------------
+Now that you have the robot's heading, let's get moving! We can break this up into intermediate steps. 
+
+* Consider comparing your current heading value with the desired heading value. (The desired heading value should be computed the same way, but with your clicked point)
+
+* Next consider the case when the robot is on the left, facing rightward, and wants to get to a target on the right of the image. 
+
+* Once you have the right-direction version working, then try adding the left-direction version as a special case.
 
 
 
