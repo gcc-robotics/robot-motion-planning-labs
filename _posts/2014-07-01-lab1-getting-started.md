@@ -218,14 +218,15 @@ Creating a Workspace
 
 A catkin workspace is a folder where you modify, build, and install catkin packages. You 
 will using catkin workspace for all of the labs. 
+	
 
-	* Follow these instructions to create a ROS workspace.
+* Follow these instructions to create a ROS workspace.
 
 		$ mkdir -p ~/name_your_ws/src
 		$ cd ~/name_your_ws/src
 		$ catkin_init_workspace
 
-	* Now your workspace is ready. The root of your workspace is ~/name_your_ws/ 
+* Now your workspace is ready. The root of your workspace is ~/name_your_ws/ 
 	  and ~/name_your_ws/src is your source space. The source space is where you will store 
 	  your labs. These are called nodes and will be covered in Lab 2.
 
