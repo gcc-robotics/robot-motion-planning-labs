@@ -99,14 +99,17 @@ is nothing more than an executable file within ROS packages.
 
 We have provided a sample ROS C++ node that publishes velocity commands in order
  to move in a square. This publishes the same topics from part B above. First 
- download the zip file and extract into your catkin workspace. Running 
+ download the zip file and extract into your catkin workspace. Run: 
 
     $ catkin_make 
 
- from your workspace will compile your starter code and you should be able to run
- the sample program using 
+Catkin make was introduced last lab. Before you can run your program, you need to run one more command. If you look in your current directory you should now have a 'build' and 'devel' folder. Inside the 'devel' folder you can see that there are now several setup.*sh files. Sourcing any of these files will overlay this workspace on top of your environment.
 
-    $ rosrun lab2_pkg lab2_node
+    $ source devel/setup.bash
+
+Now you are ready to run your program. In order to run your nodes through ROS follow the command:
+
+    $ rosrun lab2_pkg_name lab2_node_name
 
  Note: The code written was written on just one iCreate. Each robot may be calibrated slightly
  differently, so if your robot does not make a perfect square, do not be alarmed,
