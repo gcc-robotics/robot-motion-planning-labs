@@ -71,7 +71,7 @@ ROS's fundamental capability includes easy communication among distinct programs
 Previously, we went over the communication using publisher. This lab will introduce 
 to a different way of communication called subscriber.
 
-	* If a program wants access to a streaming data, it uses subscriber to access them
+* If a program wants access to a streaming data, it uses subscriber to access them
 
 The subscriber, like the word indicates, subscribes to a message to access the data. 
 In this lab, we require the bumper sensor data. So previously, we saw the ROS topics 

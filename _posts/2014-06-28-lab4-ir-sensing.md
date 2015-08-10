@@ -40,28 +40,28 @@ its connected to the robot.To start, we'll use ROS's command-line tools in order
 to see the data stream that ROS is providing. These "data streams" we've been 
 using are known as topics in ROS terminology.
 
-	* At your Terminal run rostopic to see all the different ROS provided commands
-	  related to topics.
+* At your Terminal run rostopic to see all the different ROS provided commands
+  related to topics.
 
 		$ rostopic
 
-	* In particular, run rostopic list to see all the topics available at the momment.
-	  Which are the ones you are interested in.
+* In particular, run rostopic list to see all the topics available at the momment.
+  Which are the ones you are interested in.
 
 		$ rostopic list
 
-	* If you do not see the topic mobile_base/sensors/core, try reconnecting your
-	  iRobot following the lab 1 commands.
+* If you do not see the topic mobile_base/sensors/core, try reconnecting your
+  iRobot following the lab 1 commands.
 
-	* To print the data flowing through Terminal, we will be using echo command.
+* To print the data flowing through Terminal, we will be using echo command.
 
 		$ rostopic echo mobile_base/sensors/core
 
-	* Try putting different colored item under the cliff sensors and observe the
+* Try putting different colored item under the cliff sensors and observe the
 	  topics printed on your Terminal.
 
-	* The sensors are found under the robot. It is labeled as "Cliff Sensor Openings" on 
-	  the picture.
+* The sensors are found under the robot. It is labeled as "Cliff Sensor Openings" on 
+  the picture.
 
 ![iRobot Bottom View][irobot-bottom-view]
 
@@ -77,13 +77,13 @@ Line-following
 
 The idea of this lab is:
 
-	* First, place the iRobot so that it's cliff sensors straddle in a line
+* First, place the iRobot so that it's cliff sensors straddle in a line
 
-	* Using FSM, your iRobot will have to follow the line provided
+* Using FSM, your iRobot will have to follow the line provided
 
-	* When the cliff sensor detects the line, make appropriate state to get back on track
+* When the cliff sensor detects the line, make appropriate state to get back on track
 
-	* The picture will guide you the task a bit more clearly.
+* The picture will guide you the task a bit more clearly.
 
 ![iRobot Foward][line-follower-foward] ![iRobot Turn][line-follower-turn]
 
