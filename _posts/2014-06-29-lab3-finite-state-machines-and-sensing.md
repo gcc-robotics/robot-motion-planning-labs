@@ -39,28 +39,28 @@ to see the data stream that ROS is providing. These "data streams" we've been
 using are known as topics in ROS terminology.
 
 	
-	* At your Terminal run rostopic to see all the different ROS provided commands
-	  related to topics.
+* At your Terminal run rostopic to see all the different ROS provided commands
+  related to topics.
 
 		$ rostopic
 
-	* In particular, run rostopic list to see all the topics available at the momment.
-	  Which are the ones you are interested in.
+* In particular, run rostopic list to see all the topics available at the momment.
+  Which are the ones you are interested in.
 
 		$ rostopic list
 
-	* If you do not see the topic mobile_base/sensors/core, try reconnecting your
+* If you do not see the topic mobile_base/sensors/core, try reconnecting your
 	  iRobot following the lab 1 commands.
 
-	* To print the data flowing through Terminal, we will be using echo command.
+* To print the data flowing through Terminal, we will be using echo command.
 
 		$ rostopic echo mobile_base/sensors/core
 
-	* Try echoing the sensor messages and gently tap the bumpers of your iRobot.
-	  This should trigger different sensor messages on your Terminal.
+* Try echoing the sensor messages and gently tap the bumpers of your iRobot.
+  This should trigger different sensor messages on your Terminal.
 
-	* The bumper sensors can be found under the robot. It is labeled as "Contact Points 
-	  for Home Base".
+* The bumper sensors can be found under the robot. It is labeled as "Contact Points 
+  for Home Base".
 
 ![iRobot Bottom View][irobot-bottom-view]
 
@@ -86,13 +86,13 @@ Returning to FSM
 The example code includes few functions that make up the FSM itself. These functions
 should include:
 
-	* state_start
+* state_start
 
-	* state_forward
+* state_forward
 
-	* state_backward
+* state_backward
 
-	* state_bumper_triggered
+* state_bumper_triggered
 
 Read over the functions and determine the relationship among the states. The transition
 between the states are triggered by external events, such as elapsed time or a sensor
