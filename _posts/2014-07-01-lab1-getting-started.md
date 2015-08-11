@@ -24,7 +24,7 @@ system, there is a course at Glendale Community College (CS/IS 172) available.
 Introduction to Robot Operating System (ROS)
 -----------------
 
-#### subtitle?
+### subtitle?
 
 The Robot Operating System (ROS) is a flexible framework for writing robot software. 
 It is a collection of tools, libraries, and conventions that aim to simplify the 
