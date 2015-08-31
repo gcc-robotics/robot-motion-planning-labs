@@ -51,7 +51,7 @@ Where we have moved the top left corner of the window to be at the point on the 
 OpenCV as well as a lot of other computer programs use a different coordinate scheme than normal math does. This means that the point (0,0) is at the top left corner of a window, and the numbers count by pixel. So the point (0, 10) is 0 pixels over from the left edge of the screen and 10 pixels down from the top edge of the screen.
 Here is a diagram of how it works: 
 
-*insert picture here*
+![OpenCV Window][openCV-top-left]
 
 ### Sliders ###
 While two of these windows simply have images in them, one of them contains a bunch of sliders. Most of the code to make the sliders work are in OpenCV and we don't have to worry about them.
@@ -86,3 +86,6 @@ the upper-left vertex's x-coordinate
 the upper-left vertex's y-coordinate
 the width of the rectangle, and
 the height of the rectangle.
+
+
+[openCV-top-left]: ../images/post/top_left.png
