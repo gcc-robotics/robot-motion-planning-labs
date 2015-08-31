@@ -46,7 +46,7 @@ Download the zip file into the src directory of your catkin workspace. You may b
 
 	rosrun color_thresholding thresholding_node
 
-
+This should display several windows with stream of images from the Kinect. Soon we will add more functionality to our program and begin tracking objects of a certain color.
 
 OpenCV Windows
 --------------
@@ -54,14 +54,16 @@ OpenCV Windows
 In order to let you see what the Kinect is seeing, we create windows through OpenCV.
 This happens in the initialization functions:
 
-	cv.NamedWindow('image')
+	namedWindow(WindowName,0)
 
 if you haven't run the program yet, go ahead and run it (Instructions are in the Getting Started section!).
 
 ###Window Positioning###
 
 You might have noticed that the when the windows appear, they overlap each other quite a bit. This is because we have the ability to tell the windows where they should first be placed. We do this through this code:
-cv.MoveWindow('threshold', 10, 0)
+
+	MoveWindow('threshold', 10, 0)
+
 Where we have moved the top left corner of the window to be at the point on the screen: (0, 10)
 OpenCV as well as a lot of other computer programs use a different coordinate scheme than normal math does. This means that the point (0,0) is at the top left corner of a window, and the numbers count by pixel. So the point (0, 10) is 0 pixels over from the left edge of the screen and 10 pixels down from the top edge of the screen.
 Here is a diagram of how it works: 
@@ -72,6 +74,9 @@ Here is a diagram of how it works:
 While two of these windows simply have images in them, one of them contains a bunch of sliders. Most of the code to make the sliders work are in OpenCV and we don't have to worry about them.
 However, we are responsible for actually telling OpenCV that we want sliders.
 We do this like so:
+
+	createTrackbar( "H_MIN", trackbarWindowName, &H_MIN, H_MAX, on_trackbar );
+
 
 The first argument is the name, the second is the window we want to put it in, the third is the default value, and the fourth is the max the slider should go to.
 The last is a function, a callback (we'll explore these in more detail below!), that happens when someone moves the slider to a different value.
