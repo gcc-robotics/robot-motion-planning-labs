@@ -54,7 +54,7 @@ OpenCV Windows
 In order to let you see what the Kinect is seeing, we create windows through OpenCV.
 This happens in the initialization functions:
 
-	namedWindow(WindowName,0)
+	namedWindow(WindowName,0);
 
 if you haven't run the program yet, go ahead and run it (Instructions are in the Getting Started section!).
 
@@ -62,7 +62,7 @@ if you haven't run the program yet, go ahead and run it (Instructions are in the
 
 You might have noticed that the when the windows appear, they overlap each other quite a bit. This is because we have the ability to tell the windows where they should first be placed. We do this through this code:
 
-	MoveWindow('threshold', 10, 0)
+	moveWindow(WindowName, 10, 0);
 
 Where we have moved the top left corner of the window to be at the point on the screen: (0, 10)
 OpenCV as well as a lot of other computer programs use a different coordinate scheme than normal math does. This means that the point (0,0) is at the top left corner of a window, and the numbers count by pixel. So the point (0, 10) is 0 pixels over from the left edge of the screen and 10 pixels down from the top edge of the screen.
@@ -81,6 +81,8 @@ We do this like so:
 The first argument is the name, the second is the window we want to put it in, the third is the default value, and the fourth is the max the slider should go to.
 The last is a function, a callback (we'll explore these in more detail below!), that happens when someone moves the slider to a different value.
 
+Your task is to add the remaining trackbars for H_MAX, S_Min, S_MAX, V_MIN, V_MAX.
+
 Callback Functions
 --------------
 
@@ -92,14 +94,18 @@ Image Processing with OpenCV
 
 ### Drawing on Top of an Image ###
 
-OpenCV also allows users to manipulate images by drawing shapes on them. We will be completing the blob finding part of the program by creating a box around the largest contour area found by thresholding, and a circle at its center.
+OpenCV also allows users to manipulate images by drawing shapes on them. We will be completing the object detection part of the program by drawing a circle and pixel coordinate text at the center of the objects detected.
 
-This occurs in the function find_biggest_region.
-This function's first four lines uses the OpenCV library to find all of the closed contours of self.threshed_image
-The check if len(contours)>0: simply asks if there were any contours at all
+We also want to draw a box around the largest contour area found by thresholding, and a circle at its center.
+
+This occurs in the function find_biggest_region function.
+Here we use OpenCV library functionsto find all of the closed contours of the thresholded image.
+The line that checks if len(contours)>0, simply asks if there were any contours at all.
 Then, the code finds the largest contour by area
-At the moment, it draws a red box using cv.PolyLine at the vertices (42,42),(42,100),(100,100),(100,42) and a yellow circle at (42,42) with cv.Circle
+At the moment, it draws a red box using cv.PolyLine at the vertices (42,42),(42,100),(100,100),(100,42) and a yellow circle at (42,42) with circle.
+
 Remember that the coordinate system has (0, 0) at the top left corner of the image!
+
 Change the code so that it draws the bounding box around the largest found foreground region and draws the circle at the center of that bounding box.
 Note that you already have the data you need (it's in br, short for "bounding rectangle"), but you'll want to examine that (by printing it out as it changes) in order to extract the information needed to add the drawing. The bounding rectangle br is a list with four components:
 the upper-left vertex's x-coordinate
