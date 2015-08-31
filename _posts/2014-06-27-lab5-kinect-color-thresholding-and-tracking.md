@@ -27,7 +27,7 @@ In this lab exercise you will use the hue-saturation-value color space. it is a 
 
 The hue axis, which is circular, intends to represent roughly what we mean when we use different color names: green, cyan, yellow, etc. The value axis represents the amount of light present in a pixel -- that is, it's greyscale intensity, independent of hue. Finally, the saturation axis intends to capture roughly what we mean by the "richness" of a color, e.g., a deep scarlet would have a high saturation; a pale pink would have a low saturation. By using HSV (hue-saturation-value) and RGB (red-green-blue) thresholds for a particular color, it should be possible to extract regions reliably. 
 
-*include picture here*
+![HSV diagram][HSV-axis]
 
 Getting Started
 ---------------
@@ -88,4 +88,5 @@ the width of the rectangle, and
 the height of the rectangle.
 
 
+[HSV-axis]: ../images/post/HSV.png
 [openCV-top-left]: ../images/post/top_left.png
