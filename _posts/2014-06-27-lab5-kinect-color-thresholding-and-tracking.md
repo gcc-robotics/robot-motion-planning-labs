@@ -14,10 +14,21 @@ Computer vision is a rich source of input and one of the more computaionally cha
 Preliminaries
 --------------
 
-starter code and setting up the kinect camera
+This lab will guide you to create a program that analyzes images, one-at-a-time, from the Kinect's video stream.
 
-check to see if connected and seeing images on topic
+In order to process pixels from the Kinect, you will use the OpenCV library. Like ROS, OpenCV is maintained by Willow Garage and is by far the most popular (and some might argue most powerful) computer vision library available today. In addition, you will take advantage of the OpenCV interface to add keyboard-based remote-control capabilities to your robot. 
 
+Let's first capture images from your Kinect. You should have the drivers installed from lab 0.
+
+To launch the camera drivers, type or copy paste the following:
+
+	$ roslaunch freenect_launch freenect
+
+This publishes ros sensor images on the topic, "camera/rgb/image_raw". To view the stream of images, you can use the following:
+
+	$ rosrun image_view image_view image:=/camera/rgb/image_raw
+
+You should see the video stream from the kinect. Leave this driver running in a terminal window for the remainder of this lab as it will be needed for our program.
 
 Introduction to Thresholding
 --------------
@@ -31,16 +42,20 @@ The hue axis, which is circular, intends to represent roughly what we mean when 
 
 Getting Started
 ---------------
-This lab will guide you to create a program that analyzes images, one-at-a-time, from the Kinect's video stream.
+Download the zip file into the src directory of your catkin workspace. You may build the code by running catkin_make in the root of your workspace. You can run the program using the following:
 
-In order to process pixels from the Kinect, you will use the OpenCV library. Like ROS, OpenCV is maintained by Willow Garage and is by far the most popular (and some might argue most powerful) computer vision library available today. In addition, you will take advantage of the OpenCV interface to add keyboard-based remote-control capabilities to your robot. Next week, you will use vision and robot control together to implement an autonomous point-to-point navigation routine.
+	rosrun color_thresholding thresholding_node
+
+
 
 OpenCV Windows
 --------------
 
 In order to let you see what the Kinect is seeing, we create windows through OpenCV.
 This happens in the initialization functions:
-cv.NamedWindow('image')
+
+	cv.NamedWindow('image')
+
 if you haven't run the program yet, go ahead and run it (Instructions are in the Getting Started section!).
 
 ###Window Positioning###
