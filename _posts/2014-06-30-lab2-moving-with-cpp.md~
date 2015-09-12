@@ -8,7 +8,7 @@ zipFile: intro_to_motion.zip
 Introduction
 --------------
 
-In the previous lab you were able to control your iRobot remotely with several keyboard keys. Now you will be progressing towards autonomous motion. In this lab you will be programming your iRobot to move in a polygon trace motion. We have provided starter code which will get your robot moving in a square.
+In the previous lab you were able to control your iRobot remotely with several keyboard keys. Now you will be progressing towards autonomous motion. In this lab you will be programming your iRobot to move in a polygon trace motion.
 
 Preliminaries
 --------------
