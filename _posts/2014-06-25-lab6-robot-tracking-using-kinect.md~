@@ -2,7 +2,7 @@
 layout: post
 title: "Lab 6: Robot Tracking and Navigation Using Color Thresholding"
 description: "In this lab, we will be enabling your robot to move to any position in the Kinect's view. We'll select a point by clicking on the screen and use visual servoing to arrive at that point."
-zipFile: visual_servoing.zip
+zipFile: gh-pages.zip
 ---
 
 Introduction
