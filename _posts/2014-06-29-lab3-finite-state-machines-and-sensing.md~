@@ -113,6 +113,6 @@ trigger.
 Wall following with FSM
 --------------
 
-Let's get moving! Once you've figured out
+Let's get moving! Use the functions above to determine the states needed for your state machine. Change the code in the goRobotGo function in RoboState.cpp so the robot can follow the walls of the lab.
 
 [irobot-bottom-view]: ../images/post/irobot-bottom-view.jpg
